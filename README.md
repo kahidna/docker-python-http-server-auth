@@ -9,7 +9,7 @@ You can build  the Dockerfile or use an image from my Docker registry. Make sure
 ```docker
 docker run -d --name simple-http --hostname simple-hhtp -v /exposed/directory:/data -p 4000:8888 -e USERNAMELOGIN=yourname -e PASSWORDLOGIN=yourpassword -e PORT=8888 kahidna/python-sauth:3.14
 ```
-Or if you prefer, use Docker Compose:
+Or if you prefer, use Docker Compose:    
 Clone this repo
 ```bash
 git clone https://github.com/kahidna/docker-python-http-server-auth  
