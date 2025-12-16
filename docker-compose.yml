@@ -1,0 +1,14 @@
+services:
+  simple-http:
+    image: kahidna/python-sauth:3.14
+    container_name: simple-http
+    hostname: simple-hhtp
+    ports:
+      - "4000:8888"
+    volumes:
+      - /exposed/directory:/data
+    environment:
+      USERNAMELOGIN: yourname
+      PASSWORDLOGIN: yourpassword
+      PORT: 8888
+    restart: unless-stopped
